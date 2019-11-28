@@ -9,7 +9,6 @@ const findStudentRouter = require("../routes/findStudent");
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.static('redux'));
 app.use(bodyParser.json());
 app.use('/students', findStudentRouter);
 
